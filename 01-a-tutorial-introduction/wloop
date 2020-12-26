@@ -1,0 +1,16 @@
+#!/bin/bash
+
+case $# in
+    1)
+        #echo watchexec -cr "tcc -run $1"
+        watchexec -cr "tcc -run $1"
+        ;;
+    2)
+        #echo watchexec -cr "tcc -run $1 <$2"
+        watchexec -cr "tcc -run $1 <$2"
+        ;;
+    *)
+        echo wrong args
+        ;;
+esac
+
